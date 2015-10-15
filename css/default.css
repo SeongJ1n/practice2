@@ -1,0 +1,95 @@
+body {
+  font-family: Lora,'Times New Roman',serif;
+  font-size: 20px;
+  color: #404040;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+  font-weight: 800;
+}
+
+
+/* header */
+
+#header {
+  position: absolute;
+  width: 100%;
+  z-index: 9999;
+}
+
+#header .container {
+  overflow: hidden;
+  padding: 0 15px;
+}
+
+#header .logo {
+  float: left;
+  margin-left: -15px;
+}
+
+#header .logo a {
+  color: #fff;
+  font-size: 18px;
+  line-height: 55px;
+  padding: 20px;
+  text-decoration: none;
+}
+
+#header .navigation .gnb {
+  float: right;
+  margin-right: -15px;
+}
+
+#header .navigation .gnb li {
+  float: left;
+}
+
+#header .navigation .gnb li a {
+  font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+  font-weight: 800;
+  font-size: 12px;
+  letter-spacing: 1px;
+  line-height: 58px;
+  color: #fff;
+  padding: 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+
+/* site-heading */
+
+#site-heading {
+  background: url('../img/home-bg.jpg') center center;
+  background-size: cover;
+  text-align: center;
+}
+
+#site-heading .content {
+  padding: 150px 0;
+}
+
+#site-heading .content h1 {
+  font-size: 80px;
+  letter-spacing: -1px;
+  color: #fff;
+}
+
+#site-heading .content .small {
+  max-width: 100px;
+  margin: 20px auto;
+  border-top-width: 4px;
+  border-color: #fff;
+  border-style: solid;
+}
+
+#site-heading .content span {
+  font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+  font-size: 24px;
+  font-weight: 300;
+  color: #fff;
+}
+
+
+
