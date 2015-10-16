@@ -152,9 +152,13 @@ h1,h2,h3,h4,h5,h6 {
   border-color: #eee;
 }
 
-#list .container .pager {
+#list .container .pager-container {
   overflow: hidden;
-  margin: 20px auto;
+  padding-bottom: 13px;
+}
+
+#list .container .pager {
+  margin: 23px auto 20px;
 }
 
 
@@ -163,21 +167,24 @@ h1,h2,h3,h4,h5,h6 {
   font-size: 14px;
   font-weight: 800;
   line-height: 24px;
+  padding: 15px 25px;
+  border: 1px solid #eee;
   letter-spacing: 1px;
   text-transform: uppercase;
   text-decoration: none;
   color: #404040;
 }
 
+#list .container .pager .previous a:hover, .next a:hover {
+  background-color: #0085a1;
+  color: #fff;
+}
+
 #list .container .pager .previous {
-  padding: 15px 25px;
-  border: 1px solid #eee;
   float: left;
 }
 
 #list .container .pager .next {
-  padding: 15px 25px;
-  border: 1px solid #eee;
   float: right;
 }
 
@@ -186,16 +193,16 @@ h1,h2,h3,h4,h5,h6 {
   text-align: center;
 }
 
-#footer ul {
+#footer .favicon {
   margin-bottom: 35px;
   padding: 0;
 }
 
-#footer ul li {
+#footer .favicon li {
   display: inline-block;
 }
 
-#footer ul li a {
+#footer .favicon li a {
   display: inline-block;
   width: 45px;
   height: 45px;
@@ -205,11 +212,11 @@ h1,h2,h3,h4,h5,h6 {
   color: #fff;
 }
 
-#footer ul li a:hover {
+#footer .favicon li a:hover {
   background-color: #0085a1;
 }
 
-#footer ul li a i {
+#footer .favicon li a i {
   font-size: 26px;
   line-height: 46px;
 }
