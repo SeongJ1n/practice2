@@ -9,6 +9,11 @@ h1,h2,h3,h4,h5,h6 {
   font-weight: 800;
 }
 
+::selection {
+    color: #fff;
+    text-shadow: none;
+    background: #0085a1;
+}
 
 /* header */
 
@@ -36,6 +41,10 @@ h1,h2,h3,h4,h5,h6 {
   text-decoration: none;
 }
 
+#header .logo a:hover {
+  opacity: 0.8;
+}
+
 #header .navigation .gnb {
   float: right;
   margin-right: -15px;
@@ -57,39 +66,155 @@ h1,h2,h3,h4,h5,h6 {
   text-transform: uppercase;
 }
 
+#header .navigation .gnb li a:hover {
+  opacity: 0.8;
+}
 
-/* site-heading */
 
-#site-heading {
+/* heading */
+
+#heading {
   background: url('../img/home-bg.jpg') center center;
   background-size: cover;
   text-align: center;
 }
 
-#site-heading .content {
+#heading .content {
   padding: 150px 0;
 }
 
-#site-heading .content h1 {
+#heading .content h1 {
   font-size: 80px;
   letter-spacing: -1px;
   color: #fff;
 }
 
-#site-heading .content .small {
+#heading .content .small {
   max-width: 100px;
   margin: 20px auto;
-  border-top-width: 4px;
+  border-top-width: 3px;
   border-color: #fff;
   border-style: solid;
 }
 
-#site-heading .content span {
+#heading .content span {
   font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
   font-size: 24px;
   font-weight: 300;
   color: #fff;
 }
 
+/* list */
+
+#list .container {
+  width: 750px;
+  margin: 60px auto 20px;
+}
+
+#list .container .post a {
+  color: #404040;
+  text-decoration: none;
+}
+
+#list .container .post a:hover {
+  color: #0085a1;
+}
+
+#list .container .post h2 {
+  font-size: 36px;
+  font-weight: 800;
+  line-height: 39px;
+  margin: 30px 0 10px 0;
+}
+
+#list .container .post h3 {
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 27px;
+  margin-bottom: 15px;
+}
+
+#list .container .post p {
+  font-size: 18px;
+  font-style: italic;
+  color: gray;
+  margin-bottom: 35px;
+}
+
+#list .container .post p>a:hover {
+  text-decoration: underline;
+}
+
+#list hr {
+  border-top-width: 1px;
+  border-bottom-width: 0px;
+  border-style: solid;
+  border-color: #eee;
+}
+
+#list .container .pager {
+  overflow: hidden;
+  margin: 20px auto;
+}
 
 
+#list .container .pager .previous a, .next a {
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 800;
+  line-height: 24px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #404040;
+}
+
+#list .container .pager .previous {
+  padding: 15px 25px;
+  border: 1px solid #eee;
+  float: left;
+}
+
+#list .container .pager .next {
+  padding: 15px 25px;
+  border: 1px solid #eee;
+  float: right;
+}
+
+#footer {
+  padding: 55px 0 65px 0;
+  text-align: center;
+}
+
+#footer ul {
+  margin-bottom: 35px;
+  padding: 0;
+}
+
+#footer ul li {
+  display: inline-block;
+}
+
+#footer ul li a {
+  display: inline-block;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  margin: 0 10px;
+  background-color: #404040;
+  color: #fff;
+}
+
+#footer ul li a:hover {
+  background-color: #0085a1;
+}
+
+#footer ul li a i {
+  font-size: 26px;
+  line-height: 46px;
+}
+
+#footer p {
+  font-size: 14px;
+  color: #777;
+}
