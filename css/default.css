@@ -1,3 +1,11 @@
+.left { float: left; }
+.right { float: right; }
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 body {
   font-family: Lora,'Times New Roman',serif;
   font-size: 20px;
@@ -10,66 +18,44 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 ::selection {
-    color: #fff;
-    text-shadow: none;
-    background: #0085a1;
+  color: #fff;
+  text-shadow: none;
+  background: #0085a1;
 }
 
 /* header */
 
-#header {
-  position: absolute;
-  width: 100%;
-  z-index: 9999;
+body > header {  /* FIXME */
+  height: 0;
+  overflow: visible;
 }
 
-#header .container {
-  overflow: hidden;
-  padding: 0 15px;
-}
-
-#header .logo {
+body > header li {
   float: left;
-  margin-left: -15px;
+  padding: 0 20px;
+  line-height: 55px;  /* for vertical align */
+  height: 55px;  /* for semantic layout */
 }
 
-#header .logo a {
-  color: #fff;
-  font-size: 18px;
-  line-height: 55px;
-  padding: 20px;
-  text-decoration: none;
-}
-
-#header .logo a:hover {
-  opacity: 0.8;
-}
-
-#header .navigation .gnb {
-  float: right;
-  margin-right: -15px;
-}
-
-#header .navigation .gnb li {
-  float: left;
-}
-
-#header .navigation .gnb li a {
+body > header li a {
   font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
   font-weight: 800;
   font-size: 12px;
-  letter-spacing: 1px;
-  line-height: 58px;
   color: #fff;
-  padding: 20px;
   text-decoration: none;
+  letter-spacing: 1px;
   text-transform: uppercase;
 }
 
-#header .navigation .gnb li a:hover {
+body > header li a:hover {
   opacity: 0.8;
 }
 
+body > header li.brand a {
+  font-size: 18px;
+  letter-spacing: 0;
+  text-transform: none;
+}
 
 /* heading */
 
